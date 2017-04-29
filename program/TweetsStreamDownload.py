@@ -13,7 +13,7 @@ consumer_secret = "GItv17P5pNOqtf2eRnjpfTTyuveo4LoCHUw4OZz3HJtEOo7i7p"
 class ReaderListener(StreamListener):
 
     def __init__(self):
-        self.outfile = "tweets_data.json" 
+        self.outfile = "tweets_stream_data.json" 
 
     def on_data(self, data):
         try:
@@ -31,6 +31,7 @@ class ReaderListener(StreamListener):
         return True
 
 
+query = "Donald Trump"
 
 if __name__ == '__main__':
 
@@ -40,5 +41,5 @@ if __name__ == '__main__':
     auth.set_access_token(access_token, access_token_secret)
     stream = Stream(auth, l)
 
-    #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
-    stream.filter(track=['python', 'javascript', 'ruby'])
+    #This line filter Twitter Streams to capture data by the keywords: '.', almost all tweets
+    stream.filter(track=[query])
