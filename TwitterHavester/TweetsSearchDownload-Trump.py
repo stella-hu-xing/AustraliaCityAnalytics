@@ -31,7 +31,7 @@ GEOBOX_MEL = [144.5937, -38.4339, 145.5125, -37.5113]
 # Put your search term
 # searchquery = "*"
 
-contents = tweepy.Cursor(api.search, q="*",
+contents = tweepy.Cursor(api.search, q="Donald Trump",
                          geocode="-37.9726,145.0531,66km", lang="en").items()
 
 count = 0
@@ -59,6 +59,7 @@ while True:
 
         njson = json.dumps(content._json, ensure_ascii=False)
         doc = json.loads(njson)
+
         nid = doc['id_str']
 
         if nid in db_tweets:
