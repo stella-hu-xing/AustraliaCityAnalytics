@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&y2y$1!^n@-ff71l3s9npcwxm5^+y*8%42g9rl7c^tpb0%m679'
+SECRET_KEY = '^jl0je)#qzcotdo@^x7)s-r5e))$co=qd^q7-=x0r-iauj3=i*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'website',
+    'bootstrap_ui',
+    'tweetswebsite',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'WebApplication.wsgi.application'
+
+DJANGO_BOOTSTRAP_UI_THEME = 'bootswatch-Cosmo'
 
 
 # Database
