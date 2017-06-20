@@ -1,18 +1,10 @@
- # -------------------------------
- # Team 24
- # Kaiqi Yang 729687
- # Xing Hu 733203
- # Ziyuan Wang 735953
- # Chi Che 823488
- # Yanqin Jin 787723
- # -------------------------------
 from couchdb import Server
 import json
 
 # for local test
-#server = Server()
+server = Server()
 # for run on vm
-server = Server('http://admin:password@127.0.0.1:5984/')
+# server = Server('http://admin:password@127.0.0.1:5984/')
 
 
 def readFile():

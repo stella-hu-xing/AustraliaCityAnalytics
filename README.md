@@ -18,7 +18,12 @@ This project undertakes a variety of social media data analytics scenarios that 
 
 * Tweepy
 * Couchdb
+* paramiko
 
 ### Contribution ###
 
+* Kaiqi Yang
+* Ziyuan Wang
 * Xing Hu
+* Yanqin Jin
+* Chi Che
