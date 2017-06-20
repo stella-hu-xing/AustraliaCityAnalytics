@@ -1,2 +1,0 @@
-Django cannot fit well with bootstrap or other ui libraries. 
-The basic nav bar is lost in Django-bootstrap-ui library.
