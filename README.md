@@ -27,3 +27,5 @@ This project undertakes a variety of social media data analytics scenarios that 
 * Xing Hu
 * Yanqin Jin
 * Chi Che
+
+This repo only shows Xing's work-- Twitter Harvester and Web Application
